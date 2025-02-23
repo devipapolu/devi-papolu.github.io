@@ -14,7 +14,9 @@
     <!-- About Me Section -->
     <section id="about-me">
         <h2>About Me</h2>
-        <p>Hello! I am Devi Papolu, an AWS DevOps Engineer currently working at Brihaspathi Technologies Limited. I have a passion for automating infrastructure and deploying applications in the cloud. I have experience with CI/CD pipelines, networking, Linux, and manual testing. I am continuously learning new technologies and improving my skills.</p>
+        <p>Hello! I am Devi Papolu, an AWS DevOps Engineer currently working at Brihaspathi Technologies Limited. I have a strong passion for automating infrastructure and deploying applications in the cloud. My expertise lies in designing and implementing scalable and reliable systems through continuous integration and continuous delivery (CI/CD) pipelines. I have hands-on experience with a variety of DevOps tools such as Git, GitHub, Maven, SonarQube, Apache Tomcat, Nexus, Jenkins, Ansible, Docker, Kubernetes, and Terraform.</p>
+        <p>On the AWS side, I am well-versed with various services such as EC2, ECS, EKS, S3, EBS, RDS, VPC, Route 53, IAM, CloudFormation, CloudWatch, CodeCommit, CodeDeploy, Security Groups, Internet Gateway, Auto Scaling, and Load Balancers. I also possess strong knowledge of Linux environments, Python programming, and SQL. I am proficient in writing scripts, automating tasks, and working with databases using SQL, as well as implementing robust testing methodologies through manual testing.</p>
+        <p>As a dedicated lifelong learner, I am always exploring new technologies and strategies to improve the efficiency and performance of the systems I work on. I continually strive to enhance my skill set to provide optimal solutions for the challenges faced in the fast-paced field of DevOps.</p>
     </section>
 
     <!-- Professional Summary Section -->
@@ -86,7 +88,7 @@
             <li><strong>B. Tech in Electronics and Communication Engineering (ECE):</strong> 2018, 75%</li>
             <li><strong>MBA in Human Resources (HR):</strong> 2020, 70%</li>
         </ul>
-    </section>
+    </section>   
 
     <!-- Projects Section -->
     <section id="projects">
@@ -123,24 +125,29 @@
                 <li><strong>Key Components:</strong> HTML, CSS, JavaScript, GitHub Pages.</li>
             </ul>
         </div>
-    </section>
 
-    <!-- Contact Section (Optional) -->
-    <section id="contact">
-        <h2>Contact Me</h2>
-        <p>If you'd like to get in touch, feel free to reach out to me!</p>
-        <ul>
-            <li>Email: <a href="mailto:devi1.papolu@gmail.com">devi1.papolu@gmail.com</a></li>
-            <li>Phone: <a href="tel:+98367205775">8367205775</a></li>
-            <li>LinkedIn: <a href="https://www.linkedin.com/in/devi-papolu/" target="_blank">linkedin.com/in/devi-papolu</a></li>
-            <li>GitHub: <a href="https://github.com/devi-papolu" target="_blank">github.com/devi-papolu</a></li>
-        </ul>
-    </section>
+        <!-- Added Project -->
+        <div class="project">
+            <h3>Visitor Management System (VMS) Deployment with WhatsApp API Integration</h3>
+            <p>Led the deployment of a Visitor Management System (VMS) with WhatsApp API integration on an Ubuntu server (IP: 192.168.1.27). The backend, built with Node.js and Express.js, provides a robust API, while the frontend, developed in React.js, ensures a seamless and responsive user experience. This system enables real-time visitor notifications via the WhatsApp API and ensures high availability through PM2.</p>
+            <ul>
+                <li><strong>Technologies Used:</strong> Node.js, Express.js, React.js, MongoDB, Ubuntu Linux, PM2, Serve, OpenSSL, UFW, WhatsApp API.</li>
+                <li><strong>Key Components:</strong> Deployment on Ubuntu server, WhatsApp API for real-time notifications, SSL configuration for secure communication, process management with PM2, firewall configuration with UFW, and performance monitoring.</li>
+            </ul>
+            <p><strong>Deployment Process Overview:</strong></p>
+            <ol>
+                <li><strong>Server Setup & Application Directory:</strong> Accessed the server via SSH (ssh root@192.168.1.27) and navigated to the project directory (cd /root/vms-with-whatsappapi/vms-finalfrontend-withapi) to manage deployment and set up necessary files.</li>
+                <li><strong>Dependency Installation & Building:</strong> Ran npm install to install required dependencies for both backend and frontend, then built the React app using npm run build.</li>
+                <li><strong>Serving the App with SSL:</strong> Installed Serve (npm install -g serve) to serve the React build folder, and used OpenSSL to generate a self-signed SSL certificate for secure HTTPS communication.</li>
+                <li><strong>Firewall Configuration:</strong> Configured the firewall with UFW, allowing traffic through port 3000 for app accessibility while maintaining server security.</li>
+                <li><strong>Process Management with PM2:</strong> Ensured the app ran continuously by starting it with PM2, enabling automatic restarts upon server reboots.</li>
+                <li><strong>Monitoring & Optimization:</strong> Monitored the app’s performance using PM2 to ensure smooth operation and optimized for production use.</li>
+            </ol>
+            <p><strong>Outcome:</strong> The deployment provided real-time visitor notifications via WhatsApp, secure HTTPS communication, and ensured high availability with PM2. This project highlighted my expertise in full-stack development, server management, and DevOps, delivering a robust and scalable application.</p>
+        </div>
 
-    <footer>
-        <p>Devi Papolu</p>
-        <p>I hereby affirm that the information provided above is accurate and correct. I will prove to be worthy of your confidence and satisfaction.</p>
-    </footer>
+    </section>
 </body>
 </html>
+
 
