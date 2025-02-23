@@ -21,20 +21,40 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent overlay */
     display: flex;
     justify-content: center;
     align-items: center;
     z-index: 1000;
     visibility: visible; /* Initially visible */
     opacity: 1; /* Fully visible */
-    transition: opacity 0.5s ease-in-out;
+    transition: opacity 0.5s ease-in-out; /* Smooth fade-out */
 }
 
 .welcome-message h1 {
     color: white;
-    font-size: 2rem;
+    font-size: 2.5rem;
     text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    animation: typing 3s steps(40) 1s forwards, blink 0.75s step-end infinite;
+}
+
+/* Keyframes for typing effect */
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
 }
 
 /* Header Styles */
@@ -47,7 +67,7 @@ header {
     margin-bottom: 20px;
     display: none; /* Initially hidden */
     opacity: 0;
-    transition: opacity 0.5s ease-in-out;
+    transition: opacity 0.5s ease-in-out; /* Smooth fade-in */
 }
 
 header h1 {
