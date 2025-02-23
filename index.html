@@ -7,8 +7,15 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
+       <!-- Welcome message popup -->
+    <div id="welcomeMessage" class="welcome-message">
         <h1>Welcome to Devi Papolu's Portfolio</h1>
+        <button id="closeBtn">Close</button>
+    </div>
+
+    <!-- Header section, initially hidden email and phone will appear after the welcome message -->
+    <header id="header" style="display: none;">
+        <h1>Devi Papolu</h1>
         <p>Email: <a href="mailto:devi1.papolu@gmail.com">devi1.papolu@gmail.com</a></p>
         <p>Mobile: <a href="tel:+918367205775">8367205775</a></p>
     </header>
